@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="福井で出店するキッチンカー向けサンプルサイトです。メニュー、出店予定、問い合わせ導線を分かりやすく掲載します。">
+  <meta property="og:title" content="Hinata Kitchen Car | サンプルサイト">
+  <meta property="og:description" content="キッチンカー向けホームページのプロトタイプです。">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/hero-kitchen-car.png">
+  <title>Hinata Kitchen Car | キッチンカー サンプルサイト</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="#top">Hinata Kitchen Car</a>
+    <button class="menu-button" type="button" aria-label="メニューを開く" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <nav class="site-nav" aria-label="サイト内メニュー">
+      <a href="#menu">メニュー</a>
+      <a href="#schedule">出店予定</a>
+      <a href="#about">こだわり</a>
+      <a href="#contact">問い合わせ</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="sample-label">キッチンカー向けサンプルサイト</p>
+        <h1>今日どこで食べられるか、ひと目で分かるキッチンカーサイト。</h1>
+        <p>
+          メニュー、出店予定、イベント出店の相談をスマホで見やすく整理。
+          Instagramだけでは伝えきれない情報を、1ページにまとめます。
+        </p>
+        <div class="hero-actions">
+          <a class="button primary" href="#schedule">出店予定を見る</a>
+          <a class="button secondary" href="#contact">出店を相談する</a>
+        </div>
+      </div>
+      <img class="hero-image" src="assets/hero-kitchen-car.png" alt="地域イベントに出店するキッチンカーのサンプル画像">
+    </section>
+
+    <section class="notice">
+      <p>このページは初回打ち合わせ用のプロトタイプです。店名、写真、メニュー、価格、出店予定は仮の内容です。</p>
+    </section>
+
+    <section id="menu" class="section">
+      <div class="section-heading">
+        <p class="eyebrow">Menu</p>
+        <h2>人気メニュー</h2>
+        <p>写真と価格を並べることで、初めて見る人にも注文しやすくします。</p>
+      </div>
+      <div class="menu-grid">
+        <article class="menu-card">
+          <div class="menu-photo rice"></div>
+          <h3>季節野菜のランチボックス</h3>
+          <p>地元野菜を使った、食べやすい日替わりランチ。</p>
+          <strong>900円</strong>
+        </article>
+        <article class="menu-card">
+          <div class="menu-photo sandwich"></div>
+          <h3>グリルチキンサンド</h3>
+          <p>イベントや公園でも片手で食べやすい定番メニュー。</p>
+          <strong>750円</strong>
+        </article>
+        <article class="menu-card">
+          <div class="menu-photo drink"></div>
+          <h3>自家製レモネード</h3>
+          <p>食事と一緒に楽しめる、さっぱりしたドリンク。</p>
+          <strong>450円</strong>
+        </article>
+      </div>
+    </section>
+
+    <section id="schedule" class="section schedule-section">
+      <div class="section-heading">
+        <p class="eyebrow">Schedule</p>
+        <h2>今週の出店予定</h2>
+        <p>お客様が迷いやすい「いつ・どこで買えるか」を分かりやすく見せます。</p>
+      </div>
+      <div class="schedule-list">
+        <article>
+          <time datetime="2026-07-06">7/6 月</time>
+          <div>
+            <h3>福井駅前イベント広場</h3>
+            <p>11:00-14:30 / ランチ営業</p>
+          </div>
+        </article>
+        <article>
+          <time datetime="2026-07-09">7/9 木</time>
+          <div>
+            <h3>ショッピングセンター東側入口</h3>
+            <p>11:00-16:00 / 数量限定</p>
+          </div>
+        </article>
+        <article>
+          <time datetime="2026-07-12">7/12 日</time>
+          <div>
+            <h3>地域マルシェ</h3>
+            <p>10:00-15:00 / イベント出店</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="about" class="section about-section">
+      <div class="about-copy">
+        <p class="eyebrow">About</p>
+        <h2>お店のこだわりを、短く分かりやすく。</h2>
+        <p>
+          食材、調理、店主の思いを載せると、価格だけではなく「このお店で買いたい」という理由が伝わります。
+          文章が苦手な場合も、ヒアリングしながら一緒に整えられます。
+        </p>
+      </div>
+      <div class="point-list">
+        <div><span>01</span><p>地元の食材を使ったメニュー</p></div>
+        <div><span>02</span><p>イベント出店の相談がしやすい導線</p></div>
+        <div><span>03</span><p>Instagramとサイトをつなげた情報発信</p></div>
+      </div>
+    </section>
+
+    <section class="section use-section">
+      <div class="section-heading">
+        <p class="eyebrow">What Website Can Do</p>
+        <h2>サイトでできること</h2>
+      </div>
+      <div class="use-grid">
+        <article>
+          <h3>出店予定を固定表示</h3>
+          <p>SNS投稿が流れても、最新の出店場所を見つけやすくできます。</p>
+        </article>
+        <article>
+          <h3>メニューと価格を整理</h3>
+          <p>初めてのお客様が注文前に安心して選べるようにします。</p>
+        </article>
+        <article>
+          <h3>イベント出店の相談</h3>
+          <p>企業イベント、地域祭り、マルシェの相談窓口を作れます。</p>
+        </article>
+        <article>
+          <h3>GoogleマップやSNS連携</h3>
+          <p>必要に応じて、Instagramや地図への導線を追加できます。</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact-section">
+      <div>
+        <p class="eyebrow">Contact</p>
+        <h2>出店相談・お問い合わせ</h2>
+        <p>実装時は、Instagram DM、Googleフォーム、LINE、メールフォームなどに接続できます。</p>
+      </div>
+      <form class="contact-form" action="#" method="post">
+        <label>
+          お名前
+          <input type="text" name="name" required>
+        </label>
+        <label>
+          メールアドレス
+          <input type="email" name="email" required>
+        </label>
+        <label>
+          相談内容
+          <textarea name="message" rows="5" required></textarea>
+        </label>
+        <button class="button primary" type="submit">送信する</button>
+        <p class="form-note">現在はデモです。送信処理は接続していません。</p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Hinata Kitchen Car</p>
+    <div>
+      <a href="#">Instagram</a>
+      <a href="#contact">お問い合わせ</a>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

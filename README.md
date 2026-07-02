@@ -13,6 +13,19 @@
 │   └── main.js
 ├── assets/
 │   └── hero-web-ai.png
+├── prototypes/
+│   └── kitchen-car/
+│       ├── index.html
+│       ├── style.css
+│       ├── main.js
+│       └── assets/
+│           └── hero-kitchen-car.png
+├── client-sites/
+│   └── client-kitchen-car-site/
+│       └── 実案件化するときのスターター
+├── docs/
+│   ├── kitchen-car-proposal.md
+│   └── kitchen-car-questionnaire.md
 ├── README.md
 ├── AGENTS.md
 └── SKILLS.md
@@ -69,9 +82,27 @@ http://localhost:8000
 <form class="contact-form" action="https://formspree.io/f/xxxxxxx" method="post">
 ```
 
+## 文章や画像の差し替え方法
+
+文章を変更する場合は、`index.html` の各セクション内のテキストを編集します。
+料金、サービス内容、自己紹介、よくある質問は、見出しごとにまとまっているため、該当セクションを探して修正してください。
+
+ヒーロー画像は `assets/hero-web-ai.png` に配置しています。
+差し替える場合は同じファイル名で置き換えるか、`index.html` の画像パスを変更してください。
+
+## キッチンカー案件の準備物
+
+友達へ見せるプロトタイプは `prototypes/kitchen-car/index.html` です。
+
+友達に説明する資料は以下です。
+
+* `docs/kitchen-car-proposal.md`
+* `docs/kitchen-car-questionnaire.md`
+
+実際に案件化する場合のスターターは `client-sites/client-kitchen-car-site/` に置いています。
+本番制作に入るときは、このフォルダを営業サイトから切り離して、別フォルダ・別GitHubリポジトリとして管理します。
+
 ## 設計方針
 
 スマホでの読みやすさを優先し、HTML / CSS / JavaScript のみで構成しています。
 外部ライブラリを増やさず、初心者でも修正しやすいように、ページ構成、見た目、動作をファイル単位で分離しています。
-
-ヒーロー画像は `assets/hero-web-ai.png` に配置しています。差し替える場合は同じファイル名で置き換えるか、`index.html` の画像パスを変更してください。
