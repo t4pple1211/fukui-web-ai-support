@@ -3,75 +3,122 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="福井で出店するキッチンカー向けサンプルサイトです。メニュー、出店予定、問い合わせ導線を分かりやすく掲載します。">
-  <meta property="og:title" content="Hinata Kitchen Car | サンプルサイト">
-  <meta property="og:description" content="キッチンカー向けホームページのプロトタイプです。">
+  <meta name="description" content="福井県を中心に活動するハンバーガーキッチンカー food truck Michelle のプロトタイプサイトです。メニュー、出店予定、イベント出店相談を分かりやすく掲載します。">
+  <meta property="og:title" content="food truck Michelle | 福井のハンバーガーキッチンカー">
+  <meta property="og:description" content="福井県を中心に活動するハンバーガーキッチンカー Michelle のサンプルサイトです。">
   <meta property="og:type" content="website">
-  <meta property="og:image" content="assets/hero-kitchen-car.png">
-  <title>Hinata Kitchen Car | キッチンカー サンプルサイト</title>
+  <meta property="og:image" content="assets/michelle-hero.svg">
+  <title>food truck Michelle | 福井のハンバーガーキッチンカー</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header class="site-header">
-    <a class="logo" href="#top">Hinata Kitchen Car</a>
+    <a class="logo" href="#top" aria-label="food truck Michelle トップへ">MICHELLE</a>
     <button class="menu-button" type="button" aria-label="メニューを開く" aria-expanded="false">
       <span></span>
       <span></span>
       <span></span>
     </button>
     <nav class="site-nav" aria-label="サイト内メニュー">
-      <a href="#menu">メニュー</a>
-      <a href="#schedule">出店予定</a>
-      <a href="#about">こだわり</a>
-      <a href="#contact">問い合わせ</a>
+      <a href="#menu">Burger</a>
+      <a href="#schedule">Schedule</a>
+      <a href="#event">Event</a>
+      <a href="#photos">Photo</a>
+      <a href="#instagram">Posts</a>
     </nav>
   </header>
 
   <main id="top">
     <section class="hero">
       <div class="hero-copy">
-        <p class="sample-label">キッチンカー向けサンプルサイト</p>
-        <h1>今日どこで食べられるか、ひと目で分かるキッチンカーサイト。</h1>
-        <p>
-          メニュー、出店予定、イベント出店の相談をスマホで見やすく整理。
-          Instagramだけでは伝えきれない情報を、1ページにまとめます。
+        <p class="tagline">Fukui food truck hamburger</p>
+        <h1>
+          <span>福井を走る</span>
+          <span>イベント映えする</span>
+          <span>バーガートラック。</span>
+        </h1>
+        <p class="lead">
+          Michelleは、福井県を中心に活動するハンバーガーのキッチンカー。
+          肉の焼ける音、香ばしいバンズ、赤と黄色のポップな世界観で、イベントの空気ごと盛り上げます。
         </p>
         <div class="hero-actions">
           <a class="button primary" href="#schedule">出店予定を見る</a>
-          <a class="button secondary" href="#contact">出店を相談する</a>
+          <a class="button secondary" href="#event">出店依頼について</a>
         </div>
       </div>
-      <img class="hero-image" src="assets/hero-kitchen-car.png" alt="地域イベントに出店するキッチンカーのサンプル画像">
+      <div class="hero-visual">
+        <img src="assets/michelle-hero.svg" alt="Michelleのハンバーガーとキッチンカーをイメージしたビジュアル">
+        <div class="hero-badge">
+          <span>Michelle Burger</span>
+          <strong>EVENT READY</strong>
+        </div>
+      </div>
     </section>
 
-    <section class="notice">
-      <p>このページは初回打ち合わせ用のプロトタイプです。店名、写真、メニュー、価格、出店予定は仮の内容です。</p>
+    <section class="brand-strip" aria-label="Michelleの特徴">
+      <span>GARLIC SHRIMP BURGER</span>
+      <span>MICHELLE BURGER</span>
+      <span>FUKUI EVENT TRUCK</span>
     </section>
 
-    <section id="menu" class="section">
-      <div class="section-heading">
-        <p class="eyebrow">Menu</p>
-        <h2>人気メニュー</h2>
-        <p>写真と価格を並べることで、初めて見る人にも注文しやすくします。</p>
+    <section id="photos" class="section photo-section">
+      <div class="section-heading split-heading">
+        <div>
+          <p class="eyebrow">Photo Area</p>
+          <h2>写真で、Michelleらしさを最初に伝える。</h2>
+        </div>
+        <p>
+          実制作では、ここに実際のバーガー写真、キッチンカー外観、鉄板で焼いている写真を入れます。
+          Instagramの雰囲気とそろえることで、サイトを見た瞬間に「このお店だ」と分かるようにします。
+        </p>
+      </div>
+      <div class="photo-grid">
+        <article class="photo-tile photo-main">
+          <span>MAIN PHOTO</span>
+          <strong>看板バーガー写真</strong>
+          <p>ガーリックシュリンプバーガーやMichelle Burgerを大きく掲載。</p>
+        </article>
+        <article class="photo-tile">
+          <span>TRUCK</span>
+          <strong>キッチンカー外観</strong>
+          <p>イベント会場で見つけやすいよう、車体写真を掲載。</p>
+        </article>
+        <article class="photo-tile">
+          <span>GRIDDLE</span>
+          <strong>調理中の写真</strong>
+          <p>鉄板で焼く臨場感を見せて、食欲を作る。</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="menu" class="section menu-section">
+      <div class="section-heading split-heading">
+        <div>
+          <p class="eyebrow">Burger Lineup</p>
+          <h2>ひと目で食べたくなる、Michelleの看板バーガー。</h2>
+        </div>
+        <p>
+          Instagramの投稿で印象的な赤・黄・緑の世界観をそのままに、メニューは写真と短い説明で見せます。
+        </p>
       </div>
       <div class="menu-grid">
-        <article class="menu-card">
-          <div class="menu-photo rice"></div>
-          <h3>季節野菜のランチボックス</h3>
-          <p>地元野菜を使った、食べやすい日替わりランチ。</p>
-          <strong>900円</strong>
+        <article class="menu-card feature-card red-card">
+          <p class="menu-label">Signature</p>
+          <h3>ガーリックシュリンプバーガー</h3>
+          <p>香ばしいガーリックとぷりっとした海老を、ジューシーなパティに重ねたイベント映えの一品。</p>
+          <strong>Price: Coming soon</strong>
         </article>
-        <article class="menu-card">
-          <div class="menu-photo sandwich"></div>
-          <h3>グリルチキンサンド</h3>
-          <p>イベントや公園でも片手で食べやすい定番メニュー。</p>
-          <strong>750円</strong>
+        <article class="menu-card cream-card">
+          <p class="menu-label">Classic</p>
+          <h3>Michelle Burger</h3>
+          <p>レタス、トマト、オニオン、チーズ。王道だけど記憶に残る、Michelleの定番バーガー。</p>
+          <strong>Price: Coming soon</strong>
         </article>
-        <article class="menu-card">
-          <div class="menu-photo drink"></div>
-          <h3>自家製レモネード</h3>
-          <p>食事と一緒に楽しめる、さっぱりしたドリンク。</p>
-          <strong>450円</strong>
+        <article class="menu-card green-card">
+          <p class="menu-label">Event</p>
+          <h3>イベント限定バーガー</h3>
+          <p>会場や季節に合わせた限定メニュー。最新情報はInstagramと出店予定で告知します。</p>
+          <strong>Limited menu</strong>
         </article>
       </div>
     </section>
@@ -79,105 +126,93 @@
     <section id="schedule" class="section schedule-section">
       <div class="section-heading">
         <p class="eyebrow">Schedule</p>
-        <h2>今週の出店予定</h2>
-        <p>お客様が迷いやすい「いつ・どこで買えるか」を分かりやすく見せます。</p>
+        <h2>今どこで食べられるかを、迷わず見せる。</h2>
+        <p>Instagramの投稿が流れても、サイトに来れば直近の出店予定を確認できる形にします。</p>
       </div>
-      <div class="schedule-list">
+      <div class="schedule-board">
         <article>
-          <time datetime="2026-07-06">7/6 月</time>
+          <time datetime="2026-07-06">7/6 Mon</time>
           <div>
-            <h3>福井駅前イベント広場</h3>
-            <p>11:00-14:30 / ランチ営業</p>
+            <h3>Shirogane Square</h3>
+            <p>11:00-15:00 / Lunch truck</p>
           </div>
         </article>
         <article>
-          <time datetime="2026-07-09">7/9 木</time>
+          <time datetime="2026-07-12">7/12 Sun</time>
           <div>
-            <h3>ショッピングセンター東側入口</h3>
-            <p>11:00-16:00 / 数量限定</p>
+            <h3>SEE SEA PARK</h3>
+            <p>10:30-16:00 / Event booth</p>
           </div>
         </article>
         <article>
-          <time datetime="2026-07-12">7/12 日</time>
+          <time datetime="2026-07-20">7/20 Mon</time>
           <div>
-            <h3>地域マルシェ</h3>
-            <p>10:00-15:00 / イベント出店</p>
+            <h3>Nakago Gymnasium</h3>
+            <p>12:00-18:00 / Local event</p>
           </div>
         </article>
       </div>
+      <p class="schedule-note">実制作では、ここをInstagram投稿、Googleカレンダー、または手動更新にできます。</p>
     </section>
 
-    <section id="about" class="section about-section">
-      <div class="about-copy">
-        <p class="eyebrow">About</p>
-        <h2>お店のこだわりを、短く分かりやすく。</h2>
+    <section id="event" class="section event-section">
+      <div class="event-copy">
+        <p class="eyebrow">Event Order</p>
+        <h2>地域のお祭り、学校祭、会社行事へ。</h2>
         <p>
-          食材、調理、店主の思いを載せると、価格だけではなく「このお店で買いたい」という理由が伝わります。
-          文章が苦手な場合も、ヒアリングしながら一緒に整えられます。
+          通常営業の注文受付ではなく、イベント出店の相談を受けやすくする導線を用意します。
+          まずはInstagram DMへつなぎ、依頼が増えたら専用フォームにできます。
         </p>
       </div>
-      <div class="point-list">
-        <div><span>01</span><p>地元の食材を使ったメニュー</p></div>
-        <div><span>02</span><p>イベント出店の相談がしやすい導線</p></div>
-        <div><span>03</span><p>Instagramとサイトをつなげた情報発信</p></div>
+      <div class="event-panel">
+        <h3>相談時に聞けること</h3>
+        <ul>
+          <li>イベント日時</li>
+          <li>出店場所・住所</li>
+          <li>想定来場者数</li>
+          <li>電源・駐車スペースの有無</li>
+          <li>希望メニューや予算感</li>
+        </ul>
+        <a class="button primary" href="#instagram">相談導線を見る</a>
       </div>
     </section>
 
-    <section class="section use-section">
+    <section id="instagram" class="section instagram-section">
       <div class="section-heading">
-        <p class="eyebrow">What Website Can Do</p>
-        <h2>サイトでできること</h2>
+        <p class="eyebrow">Instagram</p>
+        <h2>Instagramの投稿を、サイト内にも見せる。</h2>
+        <p>
+          実制作では、ここにInstagramの投稿やスクリーンショットを配置します。
+          アカウントリンクだけで終わらせず、サイト上でも雰囲気が伝わるようにします。
+        </p>
       </div>
-      <div class="use-grid">
-        <article>
-          <h3>出店予定を固定表示</h3>
-          <p>SNS投稿が流れても、最新の出店場所を見つけやすくできます。</p>
+      <div class="instagram-grid">
+        <article class="insta-card red-card">
+          <span>Instagram post</span>
+          <strong>バーガー投稿</strong>
+          <p>看板メニューの投稿を掲載</p>
         </article>
-        <article>
-          <h3>メニューと価格を整理</h3>
-          <p>初めてのお客様が注文前に安心して選べるようにします。</p>
+        <article class="insta-card cream-card">
+          <span>Instagram post</span>
+          <strong>出店告知</strong>
+          <p>イベント・出店予定の投稿を掲載</p>
         </article>
-        <article>
-          <h3>イベント出店の相談</h3>
-          <p>企業イベント、地域祭り、マルシェの相談窓口を作れます。</p>
-        </article>
-        <article>
-          <h3>GoogleマップやSNS連携</h3>
-          <p>必要に応じて、Instagramや地図への導線を追加できます。</p>
+        <article class="insta-card yellow-card">
+          <span>Instagram post</span>
+          <strong>会場写真</strong>
+          <p>現地の雰囲気が伝わる投稿を掲載</p>
         </article>
       </div>
-    </section>
-
-    <section id="contact" class="section contact-section">
-      <div>
-        <p class="eyebrow">Contact</p>
-        <h2>出店相談・お問い合わせ</h2>
-        <p>実装時は、Instagram DM、Googleフォーム、LINE、メールフォームなどに接続できます。</p>
-      </div>
-      <form class="contact-form" action="#" method="post">
-        <label>
-          お名前
-          <input type="text" name="name" required>
-        </label>
-        <label>
-          メールアドレス
-          <input type="email" name="email" required>
-        </label>
-        <label>
-          相談内容
-          <textarea name="message" rows="5" required></textarea>
-        </label>
-        <button class="button primary" type="submit">送信する</button>
-        <p class="form-note">現在はデモです。送信処理は接続していません。</p>
-      </form>
+      <p class="embed-note">ここに `@foodtruck_michelle` の投稿を3〜6件表示する想定です。</p>
     </section>
   </main>
 
   <footer class="site-footer">
-    <p>Hinata Kitchen Car</p>
+    <p>food truck Michelle</p>
     <div>
-      <a href="#">Instagram</a>
-      <a href="#contact">お問い合わせ</a>
+      <a href="#menu">Menu</a>
+      <a href="#schedule">Schedule</a>
+      <a href="#instagram">Posts</a>
     </div>
   </footer>
 

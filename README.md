@@ -19,13 +19,16 @@
 │       ├── style.css
 │       ├── main.js
 │       └── assets/
-│           └── hero-kitchen-car.png
+│           ├── hero-kitchen-car.png
+│           └── michelle-hero.svg
 ├── client-sites/
 │   └── client-kitchen-car-site/
 │       └── 実案件化するときのスターター
 ├── docs/
-│   ├── kitchen-car-proposal.md
-│   └── kitchen-car-questionnaire.md
+│   ├── キッチンカーサイト提案メモ.md
+│   ├── キッチンカーサイト制作ヒアリング項目.md
+│   ├── キッチンカーサイト参考例.md
+│   └── 友達に確認すること.md
 ├── README.md
 ├── AGENTS.md
 └── SKILLS.md
@@ -96,8 +99,10 @@ http://localhost:8000
 
 友達に説明する資料は以下です。
 
-* `docs/kitchen-car-proposal.md`
-* `docs/kitchen-car-questionnaire.md`
+* `docs/キッチンカーサイト提案メモ.md`
+* `docs/キッチンカーサイト制作ヒアリング項目.md`
+* `docs/キッチンカーサイト参考例.md`
+* `docs/友達に確認すること.md`
 
 実際に案件化する場合のスターターは `client-sites/client-kitchen-car-site/` に置いています。
 本番制作に入るときは、このフォルダを営業サイトから切り離して、別フォルダ・別GitHubリポジトリとして管理します。
