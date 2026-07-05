@@ -1,14 +1,14 @@
 # Client Sites
 
-クライアント別の実運用サイトを置くフォルダです。
+このフォルダは旧運用の一時置き場です。
+
+今後、実際のお客さん向けサイトはクライアントごとに別リポジトリで管理します。
 
 ```text
-client-sites/
-  michell/
-    index.html
-    style.css
-    main.js
-    assets/
+WEB制作/
+  clients/
+    michell-site/
+    next-client-site/
 ```
 
-新しいクライアントサイトを追加する場合は、`client-sites/{client-name}/` の形式で分けます。
+`clients/` は親リポジトリでは追跡せず、それぞれの案件フォルダ内で `git init` して独立した履歴を持たせます。
